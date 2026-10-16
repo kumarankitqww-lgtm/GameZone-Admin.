@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <h2>🎮 GameZone Admin</h2>
+
+    <div>
+        <a href="#" onclick="logout()">Logout</a>
+    </div>
+</nav>
+
+<div class="dashboard">
+
+    <h1>Admin Dashboard</h1>
+
+    <div class="form-box">
+
+        <h2>Add Tournament</h2>
+
+        <input type="text" id="game" placeholder="Game Name">
+
+        <input type="text" id="tournament" placeholder="Tournament Name">
+
+        <input type="text" id="prize" placeholder="Prize Pool">
+
+        <!-- Date Option -->
+        <input type="date" id="date">
+
+        <button onclick="addTournament()">Add Tournament</button>
+
+    </div>
+
+    <h2>Available Tournaments</h2>
+
+    <div id="adminTournamentList"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
